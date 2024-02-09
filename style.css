@@ -4,6 +4,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .container {
@@ -13,8 +16,9 @@ body {
   background-color: hsl(0, 0%, 100%);
   padding: 0 5px 0 0; /* top right botton left */
   margin: 20px;
-  max-width: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  max-width: 600px; /*300px*/
+  box-sizing: border-box;
 }
 
 .product-image {
@@ -22,23 +26,29 @@ body {
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
- 
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .product-image img {
   max-width: 100%;
-  height: auto; /* This ensures the image maintains its aspect ratio */
+  height: 100%; /* This ensures the image maintains its aspect ratio */
   object-fit: cover;
 }
 
 .item {
   margin-left: 20px;
+  margin-right: 20px;
 }
+
 .perfume {
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
+font-size: 11px;
 letter-spacing: 5px;
 color: hsl(228, 12%, 48%);
+margin-top: 30px;
+margin-left: 20px;
 }
 
 .heading {
@@ -47,7 +57,10 @@ color: hsl(228, 12%, 48%);
 }
 
 .content {
+  font-family: 'Montserrat', sans-serif;
   color: hsl(228, 12%, 48%);
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 .pricing {
@@ -55,7 +68,7 @@ color: hsl(228, 12%, 48%);
   align-items: center;
 }
 
-.pricing1 {
+.new-pricing {
   color: hsl(158, 36%, 37%);
   font-weight: bold;
   font-family: 'Fraunces', serif;
@@ -65,7 +78,9 @@ color: hsl(228, 12%, 48%);
   width: 50px;
 }
 
-.pricing2 {
+.old-pricing {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
   text-decoration: line-through;
   margin-left: 60px;
   color: hsl(228, 12%, 48%);
@@ -74,13 +89,15 @@ color: hsl(228, 12%, 48%);
 .button {
   background-color: hsl(158, 36%, 45%);
   color: hsl(0, 0%, 100%);
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 8px 12px;
   font-size: 14px;
   cursor: pointer;
-  margin-left: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
   transition: background-color 0.3s ease;
-  width: 40%;
+  width: 80%;
+  max-width: 100%;
 }
 
 .button:hover {

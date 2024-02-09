@@ -1,4 +1,5 @@
-@media (min-width: 600px) {
+/* Screen width for mobile devices
+@media (min-width: 375px) {
   body {
     font-size: 14px;
   }
@@ -7,15 +8,53 @@
   }
   .button {
     width: 100%;
+    margin-left: 0;
+  }
+} */
+
+/* Screen width for mobile devices */
+@media (max-width: 375px) {
+  body {
+    font-size: 12px; /* Adjust font size for better readability on small screens */
+  }
+
+  .container {
+    width: 100%; /* Allow the container to take full width on small screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+
+  .product-image {
+    border-radius: 10px; /* Adjust border-radius for the image container */
+  }
+
+  .item {
+    margin-left: 10px; /* Reduce left margin for better spacing */
+    margin-right: 10px; /* Reduce right margin for better spacing */
+  }
+
+  .perfume {
+    font-size: 10px; /* Adjust font size for better readability */
+    margin-top: 10px; /* Adjust margin-top for better spacing */
+  }
+
+  .content {
+    font-size: 0.8em; /* Adjust font size for better readability */
+  }
+
+  .new-pricing {
+    font-size: 20px; /* Adjust font size for better readability */
+    margin-right: 20px; /* Adjust margin-right for better spacing */
+  }
+
+  .old-pricing {
+    font-size: 0.8em; /* Adjust font size for better readability */
+    margin-left: 40px; /* Adjust margin-left for better spacing */
+  }
+
+  .button {
+    width: 80%; /* Adjust button width for better fit on small screens */
   }
 }
 
-body {
-  font-size: 16px;
-}
+/* Screen width for Desktop Devices */
 
-.product-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
