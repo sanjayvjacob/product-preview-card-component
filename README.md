@@ -7,6 +7,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Livesite](#livesiteURL)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
@@ -23,6 +24,10 @@ Users should be able to:
 ### Screenshot
 
 ![](./Screenshot.png)
+
+### Live site URL:
+
+https://sanjayvjacob.github.io/product-preview-card-component/
 
 ### Built with
 
